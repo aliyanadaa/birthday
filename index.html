@@ -15,3 +15,237 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
+<body>
+
+    <div class="petal-container"></div>
+
+    <!-- Floating flowers -->
+    <div class="flowers">
+        <span>✿</span>
+        <span>♡</span>
+        <span>✿</span>
+        <span>♡</span>
+        <span>✧</span>
+        <span>✿</span>
+    </div>
+
+
+    <!-- OPENING -->
+    <section id="opening" class="page active">
+
+        <div class="flower-icon">🌷</div>
+
+        <h1>For You, Serena</h1>
+
+        <p class="subtitle">
+            Enter the secret code
+        </p>
+
+        <div class="code-inputs">
+            <input type="text" maxlength="1" readonly>
+            <input type="text" maxlength="1" readonly>
+            <input type="text" maxlength="1" readonly>
+            <input type="text" maxlength="1" readonly>
+            <input type="text" maxlength="1" readonly>
+            <input type="text" maxlength="1" readonly>
+        </div>
+
+        <div class="keypad">
+
+            <button onclick="enterNumber('1')">1</button>
+            <button onclick="enterNumber('2')">2</button>
+            <button onclick="enterNumber('3')">3</button>
+
+            <button onclick="enterNumber('4')">4</button>
+            <button onclick="enterNumber('5')">5</button>
+            <button onclick="enterNumber('6')">6</button>
+
+            <button onclick="enterNumber('7')">7</button>
+            <button onclick="enterNumber('8')">8</button>
+            <button onclick="enterNumber('9')">9</button>
+
+            <button onclick="clearCode()">×</button>
+            <button onclick="enterNumber('0')">0</button>
+            <button onclick="checkCode()">→</button>
+
+        </div>
+
+        <p class="hint">
+            Hint: The first day I gave you a gift 
+        </p>
+
+        <p id="wrong-code"></p>
+
+    </section>
+
+
+    <!-- BIRTHDAY PAGE -->
+<section id="birthday" class="page">
+
+    <div class="birthday-decor decor-1">✿</div>
+    <div class="birthday-decor decor-2">♡</div>
+    <div class="birthday-decor decor-3">✧</div>
+    <div class="birthday-decor decor-4">✿</div>
+
+    <div class="birthday-content">
+
+        <div class="birthday-flower">
+            <span>🌷</span>
+        </div>
+
+        <p class="small-title">
+            ✿ YOUR SPECIAL DAY ✿
+        </p>
+
+        <h2 class="birthday-title">
+            HAPPY BIRTHDAY
+            <span>SERENA</span>
+        </h2>
+
+        <p class="birthday-subtitle">
+            si paling agit ♡
+        </p>
+
+        <div class="sparkles">
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+        </div>
+
+        <button class="continue-btn birthday-button" onclick="showBouquet()">
+            tap to continue ✿
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- BOUQUET PAGE -->
+<section id="bouquet" class="page">
+
+    <div class="bouquet-content">
+
+        <p class="small-title">
+            A LITTLE SOMETHING FOR YOU
+        </p>
+
+        <h2 class="bouquet-title">
+            A Bouquet For You
+        </h2>
+
+        <div class="bouquet-wrapper">
+
+            <div class="bouquet-glow"></div>
+
+            <!-- Flowers -->
+            <div class="flowers-bunch">
+
+                <div class="flower flower-left">
+                    <div class="petals">🌸</div>
+                    <div class="stem"></div>
+                </div>
+
+                <div class="flower flower-center">
+                    <div class="petals">🌷</div>
+                    <div class="stem"></div>
+                </div>
+
+                <div class="flower flower-right">
+                    <div class="petals">🌸</div>
+                    <div class="stem"></div>
+                </div>
+
+                <div class="flower flower-small-left">
+                    <div class="petals">🌼</div>
+                    <div class="stem"></div>
+                </div>
+
+                <div class="flower flower-small-right">
+                    <div class="petals">🌼</div>
+                    <div class="stem"></div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <p class="bouquet-text">
+            ini namanya bunga
+        </p>
+
+        <button
+            class="continue-btn bouquet-button"
+            onclick="showLetter()">
+            tap the bouquet ♡
+        </button>
+
+    </div>
+
+</section>
+
+
+ <!-- LETTER PAGE -->
+<section id="letter" class="page">
+
+    <div class="letter-content">
+
+        <div class="small-title">
+            Dibaca diresapi diratapi
+        </div>
+
+        <h2>
+            A Letter For U
+        </h2>
+
+        <div class="letter-paper">
+
+            <p><strong>Buat si Bokem,</strong></p>
+
+            <p>
+                Happy birthday Sere
+            </p>
+
+            <p>
+                semoga yang lu semogakan tersemogakan
+            </p>
+
+            <p>
+                Doanya pikir sendiri lah, udah gede.
+                Gua bagian aamiin-in aja
+            </p>
+
+            <p>
+                oiya, lu udah agit sekarang, jadi
+                contoh yang bener buat adek kelas lu.
+                Jangan malah makin bokem.
+            </p>
+
+            <p>
+                Pokoknya enjoy your day, jangan lupa bahagia,
+                dan semoga tahun ini jadi salah satu tahun terbaik
+                buat lu.
+            </p>
+
+            <p>
+                lu harus berterimakasih sama gua karna ini buatnya
+                penuh effort coding sendiri
+            </p>
+
+            <p class="letter-signature">
+                — Saka
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
